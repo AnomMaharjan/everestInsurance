@@ -2,6 +2,8 @@ import 'package:get/get.dart';
 
 import 'package:insurance/app/modules/home/bindings/home_binding.dart';
 import 'package:insurance/app/modules/home/views/home_view.dart';
+import 'package:insurance/app/modules/login_page/bindings/login_page_binding.dart';
+import 'package:insurance/app/modules/login_page/views/login_page_view.dart';
 import 'package:insurance/app/modules/splash_screen/bindings/splash_screen_binding.dart';
 import 'package:insurance/app/modules/splash_screen/views/splash_screen_view.dart';
 
@@ -22,6 +24,11 @@ class AppPages {
       name: _Paths.SPLASH_SCREEN,
       page: () => SplashScreenView(),
       binding: SplashScreenBinding(),
+    ),
+    GetPage(
+      name: _Paths.LOGIN_PAGE,
+      page: () => LoginPageView(),
+      binding: LoginPageBinding(),
     ),
   ];
 }
