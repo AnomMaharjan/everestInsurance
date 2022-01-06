@@ -3,17 +3,20 @@ import 'package:flutter/material.dart';
 class InputField extends StatelessWidget {
   final TextEditingController textEditingController;
   final bool obscureText;
-  const InputField({
-    Key? key,
-    required this.textEditingController,
-    required this.obscureText
-  }) : super(key: key);
+  const InputField(
+      {Key? key,
+      required this.textEditingController,
+      required this.obscureText})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
       decoration: InputDecoration(
+        focusedBorder:
+            OutlineInputBorder(borderSide: BorderSide(color: Colors.blue)),
         border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(6),
           borderSide: BorderSide(color: Colors.greenAccent, width: 5.0),
         ),
       ),
