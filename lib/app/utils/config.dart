@@ -10,6 +10,8 @@ const Widget LARGE_GAP = SizedBox(
 
 const Widget EXTRA_LARGE_GAP = SizedBox(height: 24);
 
+const Color THEME_COLOR = Color(0xff0089CF);
+
 class TextSize {
   double get xxl => 36;
   double get xl => 30;

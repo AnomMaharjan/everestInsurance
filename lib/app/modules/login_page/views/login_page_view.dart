@@ -21,13 +21,11 @@ class LoginPageView extends GetView<LoginPageController> {
         resizeToAvoidBottomInset: true,
         body: SingleChildScrollView(
           child: Container(
-            // height: double.infinity,
-            // width: double.infinity,
             child: Stack(
               children: [
                 Container(
                   decoration: BoxDecoration(
-                      color: Color(0xff0089CF),
+                      color: THEME_COLOR,
                       borderRadius: BorderRadius.only(
                           bottomLeft: Radius.circular(17),
                           bottomRight: Radius.circular(17))),
@@ -79,27 +77,28 @@ class LoginPageView extends GetView<LoginPageController> {
                         // LARGE_GAP,
                         const Text(
                           "Username",
-                          style: TextStyle(color: Color(0xff0089CF)),
+                          style: TextStyle(color: THEME_COLOR),
                         ),
                         SMALL_GAP,
                         InputField(
                           textEditingController:
                               _loginPageController.usernameController,
-                          obscureText: false,
+                          obscureText: false.obs,
+                          showSuffixIcon: false,
                         ),
                         LARGE_GAP,
-                        Text("Password",
-                            style: TextStyle(color: Color(0xff0089CF))),
+                        Text("Password", style: TextStyle(color: THEME_COLOR)),
                         SMALL_GAP,
                         InputField(
                           textEditingController:
                               _loginPageController.passwordController,
-                          obscureText: true,
+                          obscureText: true.obs,
+                          showSuffixIcon: false,
                         ),
                         EXTRA_LARGE_GAP,
                         Center(
                           child: ReusableButton(
-                              color: Color(0xff0089CF),
+                              color: THEME_COLOR,
                               borderRadius: 20,
                               width: _width * 0.8,
                               height: 40,
@@ -130,8 +129,7 @@ class LoginPageView extends GetView<LoginPageController> {
                                 child: Text(
                                   "Sign Up",
                                   style: TextStyle(
-                                      fontSize: 16,
-                                      color: Colors.blue.shade400),
+                                      fontSize: 16, color: THEME_COLOR),
                                 ))
                           ],
                         )
