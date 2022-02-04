@@ -8,6 +8,8 @@ import 'package:insurance/app/modules/register_page/bindings/register_page_bindi
 import 'package:insurance/app/modules/register_page/views/register_page_view.dart';
 import 'package:insurance/app/modules/splash_screen/bindings/splash_screen_binding.dart';
 import 'package:insurance/app/modules/splash_screen/views/splash_screen_view.dart';
+import 'package:insurance/app/modules/tour_screen/bindings/tour_screen_binding.dart';
+import 'package:insurance/app/modules/tour_screen/views/tour_screen_view.dart';
 
 part 'app_routes.dart';
 
@@ -36,6 +38,11 @@ class AppPages {
       name: _Paths.REGISTER_PAGE,
       page: () => RegisterPageView(),
       binding: RegisterPageBinding(),
+    ),
+    GetPage(
+      name: _Paths.TOUR_SCREEN,
+      page: () => TourScreenView(),
+      binding: TourScreenBinding(),
     ),
   ];
 }
