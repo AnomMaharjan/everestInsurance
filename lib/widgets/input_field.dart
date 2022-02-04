@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 
 class InputField extends StatelessWidget {
   final TextEditingController textEditingController;
-  RxBool obscureText;
+  final RxBool obscureText;
   final bool showSuffixIcon;
 
   InputField({
@@ -19,7 +19,6 @@ class InputField extends StatelessWidget {
           decoration: InputDecoration(
             suffixIcon: this.showSuffixIcon
                 ? GestureDetector(
-                  
                     onTap: () {
                       print('value: $obscureText');
                       obscureText.value = !obscureText.value;

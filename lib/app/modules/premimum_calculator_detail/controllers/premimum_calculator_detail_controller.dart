@@ -1,7 +1,6 @@
 import 'package:get/get.dart';
 
-class TourScreenController extends GetxController {
-
+class PremimumCalculatorDetailController extends GetxController {
   final count = 0.obs;
   @override
   void onInit() {
