@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
 
-class HomeController extends GetxController {
-  //TODO: Implement HomeController
+class TourScreenController extends GetxController {
+  //TODO: Implement TourScreenController
 
   final count = 0.obs;
   @override
