@@ -20,12 +20,12 @@ class PremimumCalculatorDetailView
           elevation: 0,
           centerTitle: false,
           title: Text(
-            'Premimum Calculator Page',
+            'Calculator Page',
             style: TextStyle(color: Colors.white, fontSize: 18),
           ),
           leadingWidth: 30,
           leading: IconButton(
-            padding: EdgeInsets.only(left: 14),
+            padding: EdgeInsets.only(left: 18),
             icon: const Icon(Icons.arrow_back_ios, size: 20),
             onPressed: () => Get.back(),
             color: Colors.white,
@@ -47,7 +47,12 @@ class PremimumCalculatorDetailView
               )
             ],
           ),
-          actions: [AppBarCallIcon()],
+          actions: [
+            Padding(
+              padding: const EdgeInsets.only(right: 10),
+              child: AppBarCallIcon(),
+            )
+          ],
           systemOverlayStyle: const SystemUiOverlayStyle(
               statusBarColor: appThemeColor,
               statusBarIconBrightness: Brightness.light),
@@ -157,26 +162,23 @@ class PremimumCalculatorDetailView
               borderRadius: BorderRadius.all(Radius.circular(15))),
           title: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: const [
+            children: [
               Text(
                 "Please.",
-                style:
-                    TextStyle(color: Colors.blue, fontWeight: FontWeight.bold),
+                style: TextStyle(
+                    color: Colors.blue,
+                    fontSize: 30,
+                    fontWeight: FontWeight.bold),
               ),
               SizedBox(height: 5),
               Text(
                 "Please enter your valid policy number provided by the company",
-                style: TextStyle(color: Colors.blue, fontSize: 15),
+                style: TextStyle(
+                    color: Colors.blue.withOpacity(0.6), fontSize: 14),
               ),
             ],
           ),
-          content: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              const SizedBox(height: 10),
-              inputText(),
-            ],
-          ),
+          content: inputText(),
           actions: [
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -193,7 +195,6 @@ class PremimumCalculatorDetailView
                       ),
                       child: const Text("Enter")),
                 ),
-                const SizedBox(),
                 SizedBox(
                   width: width * 0.3,
                   child: ElevatedButton(
@@ -219,11 +220,14 @@ class PremimumCalculatorDetailView
 }
 
 Widget inputText() {
-  return TextFormField(
-    decoration: const InputDecoration(
-        border: OutlineInputBorder(
-          borderRadius: BorderRadius.all(Radius.circular(10)),
-        ),
-        hintText: "Policy Number"),
+  return Container(
+    height: 55,
+    child: TextFormField(
+      decoration: const InputDecoration(
+          border: OutlineInputBorder(
+            borderRadius: BorderRadius.all(Radius.circular(10)),
+          ),
+          hintText: "Policy Number"),
+    ),
   );
 }

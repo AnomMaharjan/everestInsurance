@@ -24,12 +24,17 @@ class PremimumCalculatorPageView
           ),
           leadingWidth: 30,
           leading: IconButton(
-            padding: EdgeInsets.only(left: 14),
+            padding: EdgeInsets.only(left: 18),
             icon: const Icon(Icons.arrow_back_ios, size: 20),
             onPressed: () => Get.back(),
             color: Colors.white,
           ),
-          actions: [AppBarCallIcon()],
+          actions: [
+            Padding(
+              padding: const EdgeInsets.only(right: 10.0),
+              child: AppBarCallIcon(),
+            )
+          ],
           systemOverlayStyle: const SystemUiOverlayStyle(
               statusBarColor: appThemeColor,
               statusBarIconBrightness: Brightness.light),
