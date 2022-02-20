@@ -10,6 +10,7 @@ abstract class Routes {
   static const HOME_PAGE = _Paths.HOME_PAGE;
   static const REGISTER_PAGE = _Paths.REGISTER_PAGE;
   static const TOUR_SCREEN = _Paths.TOUR_SCREEN;
+  static const PREMIUM_CALCULATOR = _Paths.PREMIUM_CALCULATOR;
 }
 
 abstract class _Paths {
@@ -19,4 +20,5 @@ abstract class _Paths {
   static const HOME_PAGE = '/home-page';
   static const REGISTER_PAGE = '/register-page';
   static const TOUR_SCREEN = '/tour-screen';
+  static const PREMIUM_CALCULATOR = '/premium-calculator';
 }

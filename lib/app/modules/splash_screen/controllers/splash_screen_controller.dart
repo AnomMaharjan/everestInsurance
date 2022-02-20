@@ -4,7 +4,7 @@ import 'package:insurance/app/routes/app_pages.dart';
 class SplashScreenController extends GetxController {
   navigate() {
     Future.delayed(Duration(seconds: 3), () {
-      Get.offAllNamed(Routes.LOGIN_PAGE);
+      Get.offAllNamed(Routes.TOUR_SCREEN);
     });
   }
 

@@ -19,7 +19,7 @@ class RegisterPageView extends GetView<RegisterPageController> {
       body: GetBuilder<RegisterPageController>(builder: (builder) {
         return SingleChildScrollView(
           child: Container(
-            margin: EdgeInsets.symmetric(vertical: _height * 0.05),
+            height: Get.height,
             padding: EdgeInsets.symmetric(
               horizontal: _width * 0.1,
             ),
@@ -124,6 +124,25 @@ class RegisterPageView extends GetView<RegisterPageController> {
                           }),
                     ],
                   ),
+                ),
+                EXTRA_LARGE_GAP,
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      "Already an user?",
+                      style: TextStyle(fontSize: 16),
+                    ),
+                    SizedBox(
+                      width: 6,
+                    ),
+                    GestureDetector(
+                        onTap: () => Get.off(() => LoginPageView()),
+                        child: Text(
+                          "Login",
+                          style: TextStyle(fontSize: 16, color: THEME_COLOR),
+                        ))
+                  ],
                 )
               ],
             ),
