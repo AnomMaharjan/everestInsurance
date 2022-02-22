@@ -5,10 +5,7 @@ import 'package:get/get.dart';
 import 'package:insurance/app/modules/home_page/controllers/home_page_controller.dart';
 import 'package:insurance/app/utils/color_helper.dart';
 import 'package:insurance/app/utils/sizes_helper.dart';
-<<<<<<< HEAD
-=======
 import 'package:insurance/widgets/appBar_call_icon.dart';
->>>>>>> ec8331e906d83fdad65014cb6261d5d71ac48838
 import 'package:insurance/widgets/reusable_container.dart';
 
 class HomeView extends GetView<HomePageController> {
@@ -26,25 +23,7 @@ class HomeView extends GetView<HomePageController> {
             color: Colors.white,
             size: 30,
           ),
-<<<<<<< HEAD
-          actions: [
-            const Spacer(),
-            Container(
-              margin: const EdgeInsets.only(right: 12),
-              height: 33,
-              width: 33,
-              decoration: const BoxDecoration(
-                  color: Colors.white, shape: BoxShape.circle),
-              child: const Icon(
-                Icons.call,
-                color: appThemeColor,
-                size: 20,
-              ),
-            )
-          ],
-=======
           actions: [const Spacer(), AppBarCallIcon()],
->>>>>>> ec8331e906d83fdad65014cb6261d5d71ac48838
           systemOverlayStyle: const SystemUiOverlayStyle(
             statusBarColor: appThemeColor,
             statusBarIconBrightness: Brightness.light,
@@ -73,13 +52,7 @@ class HomeView extends GetView<HomePageController> {
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-<<<<<<< HEAD
-                SizedBox(
-                  height: displayHeight(context) * 0.01,
-                ),
-=======
                 SizedBox(height: displayHeight(context) * 0.01),
->>>>>>> ec8331e906d83fdad65014cb6261d5d71ac48838
                 const Text(
                   "Hello, User",
                   style: TextStyle(
@@ -92,13 +65,7 @@ class HomeView extends GetView<HomePageController> {
                         color: Colors.white,
                         fontSize: 16,
                         fontWeight: FontWeight.w300)),
-<<<<<<< HEAD
-                SizedBox(
-                  height: displayHeight(context) * 0.02,
-                ),
-=======
                 SizedBox(height: displayHeight(context) * 0.02),
->>>>>>> ec8331e906d83fdad65014cb6261d5d71ac48838
               ],
             ),
           ),
@@ -133,13 +100,7 @@ class HomeView extends GetView<HomePageController> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-<<<<<<< HEAD
-        const SizedBox(
-          height: 20,
-        ),
-=======
         const SizedBox(height: 20),
->>>>>>> ec8331e906d83fdad65014cb6261d5d71ac48838
         const Padding(
           padding: EdgeInsets.only(left: 20.0),
           child: Text(
@@ -147,34 +108,14 @@ class HomeView extends GetView<HomePageController> {
             style: TextStyle(fontSize: 16, color: appThemeColor),
           ),
         ),
-<<<<<<< HEAD
-        const SizedBox(
-          height: 20,
-        ),
-        Padding(
-          padding: const EdgeInsets.only(
-            left: 20.0,
-            right: 20,
-          ),
-=======
         const SizedBox(height: 20),
         Padding(
           padding: const EdgeInsets.only(left: 20.0, right: 20),
->>>>>>> ec8331e906d83fdad65014cb6261d5d71ac48838
           child: Wrap(
             runSpacing: 16,
             runAlignment: WrapAlignment.start,
             spacing: displayWidth(context) * 0.03,
             children: List.generate(
-<<<<<<< HEAD
-              _controller.itemDetails.length,
-              (index) => SizedBox(
-                width: 106,
-                child: ReusableContainer(
-                  icon: _controller.itemDetails[index].icon,
-                  name: _controller.itemDetails[index].name,
-                  onTap: _controller.itemDetails[index].onTap,
-=======
               _controller.ourServicesCardContent.length,
               (index) => SizedBox(
                 width: 106,
@@ -182,7 +123,6 @@ class HomeView extends GetView<HomePageController> {
                   icon: _controller.ourServicesCardContent[index]['icon'],
                   name: _controller.ourServicesCardContent[index]['text'],
                   onTap: _controller.ourServicesCardContent[index]['onTap'],
->>>>>>> ec8331e906d83fdad65014cb6261d5d71ac48838
                 ),
               ),
             ),
