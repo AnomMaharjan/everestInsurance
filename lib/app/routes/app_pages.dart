@@ -4,6 +4,10 @@ import 'package:insurance/app/modules/home_page/bindings/home_page_binding.dart'
 import 'package:insurance/app/modules/home_page/views/home_page_view.dart';
 import 'package:insurance/app/modules/login_page/bindings/login_page_binding.dart';
 import 'package:insurance/app/modules/login_page/views/login_page_view.dart';
+import 'package:insurance/app/modules/premimum_calculator_detail/bindings/premimum_calculator_detail_binding.dart';
+import 'package:insurance/app/modules/premimum_calculator_detail/views/premimum_calculator_detail_view.dart';
+import 'package:insurance/app/modules/premimum_calculator_page/bindings/premimum_calculator_page_binding.dart';
+import 'package:insurance/app/modules/premimum_calculator_page/views/premimum_calculator_page_view.dart';
 import 'package:insurance/app/modules/register_page/bindings/register_page_binding.dart';
 import 'package:insurance/app/modules/register_page/views/register_page_view.dart';
 import 'package:insurance/app/modules/splash_screen/bindings/splash_screen_binding.dart';
@@ -31,7 +35,7 @@ class AppPages {
     ),
     GetPage(
       name: _Paths.HOME_PAGE,
-      page: () => HomePageView(),
+      page: () => HomeView(),
       binding: HomePageBinding(),
     ),
     GetPage(
@@ -43,6 +47,16 @@ class AppPages {
       name: _Paths.TOUR_SCREEN,
       page: () => TourScreenView(),
       binding: TourScreenBinding(),
+    ),
+    GetPage(
+      name: _Paths.PREMIMUM_CALCULATOR_PAGE,
+      page: () => PremimumCalculatorPageView(),
+      binding: PremimumCalculatorPageBinding(),
+    ),
+    GetPage(
+      name: _Paths.PREMIMUM_CALCULATOR_DETAIL,
+      page: () => PremimumCalculatorDetailView(),
+      binding: PremimumCalculatorDetailBinding(),
     ),
   ];
 }

@@ -9,7 +9,7 @@ class LoginPageController extends GetxController {
 
   onSubmit() {
     if (formKey.currentState!.validate()) {
-      Get.offAll(() => HomePageView());
+      Get.offAll(() => HomeView());
     }
   }
 

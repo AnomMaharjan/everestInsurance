@@ -1,132 +1,41 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
-class Model {
-  IconData icon;
-  String name;
-  VoidCallback onTap;
-
-  Model(this.name, this.icon, this.onTap);
-}
-
+import 'package:insurance/app/modules/premimum_calculator_page/views/premimum_calculator_page_view.dart';
 
 class HomePageController extends GetxController {
-
-
- late var pressed = false;
+  late var pressed = false;
   late var click = false;
-  final List itemDetails = [
-    Model("Buy Policy", Icons.person, () {
-      
-    }),
-    Model("Premium Calculator", Icons.person, () {
-      Container(
-        color: Colors.red,
-      );
-      // Get.to(PremiumCalculatorView());
-    }),
-    Model("Pay Premium", Icons.person, () {
-      Container(
-        color: Colors.red,
-      );
-    }),
-    Model("Claim Intimation", Icons.person, () {
-      Container(
-        color: Colors.red,
-      );
-    }),
-    Model("Cheque Claim", Icons.person, () {
-      Container(
-        color: Colors.red,
-      );
-    }),
-    Model("Check Policy", Icons.person, () {
-      Container(
-        color: Colors.red,
-      );
-    }),
-  ];
-
-  final List calculatorDetails = [
-    Model("Premium Calculator", Icons.person, () {
-      Container(
-        color: Colors.red,
-      );
-      
-    }),
-    Model("Pay Premium", Icons.person, () {
-      Container(
-        color: Colors.red,
-      );
-    }),
-    Model("Claim Intimation", Icons.person, () {
-      Container(
-        color: Colors.red,
-      );
-    }),
-    Model("Cheque Claim", Icons.person, () {
-      Container(
-        color: Colors.red,
-      );
-    }),
-    Model("Check Policy", Icons.person, () {
-      Container(
-        color: Colors.red,
-      );
-    }),
-    Model("Check Policy", Icons.person, () {
-      Container(
-        color: Colors.red,
-      );
-    }),
-    Model("Check Policy", Icons.person, () {
-      Container(
-        color: Colors.red,
-      );
-    }),
-    Model("Check Policy", Icons.person, () {
-      Container(
-        color: Colors.red,
-      );
-    }),
-    Model("Premium Calculator", Icons.person, () {
-      Container(
-        color: Colors.red,
-      );
-      
-    }),
-    Model("Premium Calculator", Icons.person, () {
-      Container(
-        color: Colors.red,
-      );
-      
-    }),
-    Model("Pay Premium", Icons.person, () {
-      Container(
-        color: Colors.red,
-      );
-    }),
-    Model("Claim Intimation", Icons.person, () {
-      Container(
-        color: Colors.red,
-      );
-    }),
-    Model("Premium Calculator", Icons.person, () {
-      Container(
-        color: Colors.red,
-      );
-      
-    }),
-    Model("Pay Premium", Icons.person, () {
-      Container(
-        color: Colors.red,
-      );
-    }),
-    Model("Claim Intimation", Icons.person, () {
-      Container(
-        color: Colors.red,
-      );
-    }),
+  List<Map> ourServicesCardContent = [
+    {
+      'text': 'Buy Policy',
+      'icon': Icons.real_estate_agent_sharp,
+      'onTap': () {},
+    },
+    {
+      'text': 'Pay Premium',
+      'icon': Icons.attach_money_sharp,
+      'onTap': () {},
+    },
+    {
+      'text': 'Claim Intimation',
+      'icon': Icons.contact_page,
+      'onTap': () {},
+    },
+    {
+      'text': 'Cheque Claim',
+      'icon': Icons.find_in_page,
+      'onTap': () {},
+    },
+    {
+      'text': 'Check Policy',
+      'icon': Icons.find_in_page,
+      'onTap': () {},
+    },
+    {
+      'text': 'Premium Calculator',
+      'icon': Icons.calculate,
+      'onTap': () => Get.to(() => PremimumCalculatorPageView()),
+    }
   ];
 
   final List images = [
