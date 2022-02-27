@@ -12,87 +12,87 @@ class PremimumCalculatorPageController extends GetxController {
     {
       'text': 'Pay Premium',
       'icon': Icons.attach_money_sharp,
-      'onTap': () {},
+      'onTap': () => Get.to(() => PremimumCalculatorDetailView()),
     },
     {
       'text': 'Claim Intimation',
       'icon': Icons.contact_page,
-      'onTap': () {},
+      'onTap': () => Get.to(() => PremimumCalculatorDetailView()),
     },
     {
       'text': 'Cheque Claim',
       'icon': Icons.find_in_page,
-      'onTap': () {},
+      'onTap': () => Get.to(() => PremimumCalculatorDetailView()),
     },
     {
       'text': 'Check Policy',
       'icon': Icons.find_in_page,
-      'onTap': () {},
+      'onTap': () => Get.to(() => PremimumCalculatorDetailView()),
     },
     {
       'text': 'Premium Calculator',
       'icon': Icons.calculate,
-      'onTap': () {},
+      'onTap': () => Get.to(() => PremimumCalculatorDetailView()),
     },
     {
       'text': 'Buy Policy',
       'icon': Icons.real_estate_agent_sharp,
-      'onTap': () {},
+      'onTap': () => Get.to(() => PremimumCalculatorDetailView()),
     },
     {
       'text': 'Pay Premium',
       'icon': Icons.attach_money_sharp,
-      'onTap': () {},
+      'onTap': () => Get.to(() => PremimumCalculatorDetailView()),
     },
     {
       'text': 'Claim Intimation',
       'icon': Icons.contact_page,
-      'onTap': () {},
+      'onTap': () => Get.to(() => PremimumCalculatorDetailView()),
     },
     {
       'text': 'Cheque Claim',
       'icon': Icons.find_in_page,
-      'onTap': () {},
+      'onTap': () => Get.to(() => PremimumCalculatorDetailView()),
     },
     {
       'text': 'Check Policy',
       'icon': Icons.find_in_page,
-      'onTap': () {},
+      'onTap': () => Get.to(() => PremimumCalculatorDetailView()),
     },
     {
       'text': 'Premium Calculator',
       'icon': Icons.calculate,
-      'onTap': () {},
+      'onTap': () => Get.to(() => PremimumCalculatorDetailView()),
     },
     {
       'text': 'Buy Policy',
       'icon': Icons.real_estate_agent_sharp,
-      'onTap': () {},
+      'onTap': () => Get.to(() => PremimumCalculatorDetailView()),
     },
     {
       'text': 'Pay Premium',
       'icon': Icons.attach_money_sharp,
-      'onTap': () {},
+      'onTap': () => Get.to(() => PremimumCalculatorDetailView()),
     },
     {
       'text': 'Claim Intimation',
       'icon': Icons.contact_page,
-      'onTap': () {},
+      'onTap': () => Get.to(() => PremimumCalculatorDetailView()),
     },
     {
       'text': 'Cheque Claim',
       'icon': Icons.find_in_page,
-      'onTap': () {},
+      'onTap': () => Get.to(() => PremimumCalculatorDetailView()),
     },
     {
       'text': 'Check Policy',
       'icon': Icons.find_in_page,
-      'onTap': () {},
+      'onTap': () => Get.to(() => PremimumCalculatorDetailView()),
     },
     {
       'text': 'Premium Calculator',
       'icon': Icons.calculate,
-      'onTap': () {},
+      'onTap': () => Get.to(() => PremimumCalculatorDetailView()),
     }
   ];
 

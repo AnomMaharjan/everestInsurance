@@ -9,27 +9,27 @@ class HomePageController extends GetxController {
     {
       'text': 'Buy Policy',
       'icon': Icons.real_estate_agent_sharp,
-      'onTap': () {},
+      'onTap': () => Get.to(() => PremimumCalculatorPageView())
     },
     {
       'text': 'Pay Premium',
       'icon': Icons.attach_money_sharp,
-      'onTap': () {},
+      'onTap': () => Get.to(() => PremimumCalculatorPageView())
     },
     {
       'text': 'Claim Intimation',
       'icon': Icons.contact_page,
-      'onTap': () {},
+      'onTap': () => Get.to(() => PremimumCalculatorPageView())
     },
     {
       'text': 'Cheque Claim',
       'icon': Icons.find_in_page,
-      'onTap': () {},
+      'onTap': () => Get.to(() => PremimumCalculatorPageView())
     },
     {
       'text': 'Check Policy',
       'icon': Icons.find_in_page,
-      'onTap': () {},
+      'onTap': () => Get.to(() => PremimumCalculatorPageView())
     },
     {
       'text': 'Premium Calculator',
