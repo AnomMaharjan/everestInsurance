@@ -17,6 +17,7 @@ class HomeView extends GetView<HomePageController> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
+           
           elevation: 0,
           leading: const Icon(
             Icons.menu,
@@ -110,11 +111,11 @@ class HomeView extends GetView<HomePageController> {
         ),
         const SizedBox(height: 20),
         Padding(
-          padding: const EdgeInsets.only(left: 20.0, right: 20),
+          padding: const EdgeInsets.only(left: 18.0, right: 18),
           child: Wrap(
             runSpacing: 16,
             runAlignment: WrapAlignment.start,
-            spacing: displayWidth(context) * 0.03,
+            spacing: displayHeight(context) < 684 ? displayWidth(context)*0.02 :  displayWidth(context) * 0.03,
             children: List.generate(
               _controller.ourServicesCardContent.length,
               (index) => SizedBox(
@@ -128,6 +129,7 @@ class HomeView extends GetView<HomePageController> {
             ),
           ),
         ),
+        const SizedBox(height: 20),
       ],
     );
   }
